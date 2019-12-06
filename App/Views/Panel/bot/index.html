@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}مدیریت بات ها{% endblock %}
+
+{% block body %}
+    
+      <div class="card mt-5">
+              <div class="card-header">
+                <h5 class="card-title float-right">لیست بات ها</h5>
+
+                <div class="card-tools">
+                  <div class="m-0 float-left">
+                    <a class="btn btn-primary btn-sm" href="{{ URL_ROOT }}bots/create">
+                    ایجاد بات 
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <table class="table">
+                  <tbody><tr>
+                    <th style="width: 10px">#</th>
+                    <th>نام بات</th>
+                    <th>توکن</th>
+                    <th>عملیات</th>
+                  </tr>
+                  <tr>
+                    <td>۱.</td>
+                    <td>آپدیت نرم افزار</td>
+                    <td>
+                      لابیاتیلاتبتاال
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-danger btn-sm">حذف</button>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+
+
+      
+{% endblock %}

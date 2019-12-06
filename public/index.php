@@ -26,7 +26,9 @@ set_exception_handler('Core\Error::exceptionHandler');
 $router = new Core\Router();
 
 // Add the routes
-$router->add('', ['controller' => 'Home', 'action' => 'index']);
+$router->add('', ['controller' => 'Panel', 'action' => 'index']);
+$router->add('bots', ['controller' => 'Bot', 'action' => 'index']);
+$router->add('bots/create', ['controller' => 'Bot', 'action' => 'create']);
 // $router->add('{controller}/{action}');
 
     

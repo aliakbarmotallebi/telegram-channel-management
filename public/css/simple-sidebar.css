@@ -1,0 +1,114 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+ @font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir.woff2') format('woff2'),
+    url('../fonts/Vazir.woff') format('woff'),
+    url('../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Bold.woff2') format('woff2'),
+    url('../fonts/Vazir-Bold.woff') format('woff'),
+    url('../fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Light.eot');
+    src: url('../fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Light.woff2') format('woff2'),
+    url('../fonts/Vazir-Light.woff') format('woff'),
+    url('../fonts/Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Medium.eot');
+    src: url('../fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Medium.woff2') format('woff2'),
+    url('../fonts/Vazir-Medium.woff') format('woff'),
+    url('../fonts/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Thin.eot');
+    src: url('../fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Thin.woff2') format('woff2'),
+    url('../fonts/Vazir-Thin.woff') format('woff'),
+    url('../fonts/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Black.eot');
+    src: url('../fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Black.woff2') format('woff2'),
+    url('../fonts/Vazir-Black.woff') format('woff'),
+    url('../fonts/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+/*---------------------------------- End of fonts ---------------------------------- */
+
+body {
+  overflow-x: hidden;
+  font-family: 'Vazir';
+  font-weight: 300;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}

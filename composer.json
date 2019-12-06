@@ -1,0 +1,14 @@
+{
+    "require": {
+        "twig/twig": "~2.0",
+        "symfony/apache-pack": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+             "Core\\": "Core/",
+             "App\\": "App/"
+        }
+    },
+    "require-dev": {
+    }
+}

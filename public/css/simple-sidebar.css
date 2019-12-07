@@ -112,3 +112,14 @@ body {
     margin-left: -15rem;
   }
 }
+
+.chat-image{
+  width: 72px;
+  height: 72px;
+  border-radius: 36px;
+  margin-right: 12px;
+}
+
+.table td, .table th {
+    vertical-align: middle !important;
+}

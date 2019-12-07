@@ -29,7 +29,8 @@ $router = new Core\Router();
 $router->add('', ['controller' => 'Panel', 'action' => 'index']);
 $router->add('bots', ['controller' => 'Bot', 'action' => 'index']);
 $router->add('bots/create', ['controller' => 'Bot', 'action' => 'create']);
+$router->add('chats', ['controller' => 'Chat', 'action' => 'index']);
 // $router->add('{controller}/{action}');
 
-    
+
 $router->dispatch($_SERVER['QUERY_STRING']);
